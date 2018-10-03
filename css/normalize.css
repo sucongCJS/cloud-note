@@ -14,15 +14,16 @@ h1{
 }
 /* 登陆注册的标题 */
 .intro{
-    width: 380px;
+    max-width: 380px;
     margin: 40px auto;
     margin-top: 100px;
     text-align: center;
 }
 /* 登陆注册的表单 */
 .form-wrapper{
-    width: 380px;
+
     margin: 0 auto;
+    max-width: 380px;
 }
 .box{
     border-style: groove;
