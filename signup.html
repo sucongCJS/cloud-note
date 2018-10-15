@@ -18,8 +18,9 @@
                 <div class="login_box box">
                     <!-- 输入用户名 -->
                     <div class="input">
-                        <input id="username" class="text" type="text" placeholder="请输入账户名" onclick="fnClearError()" name="username" onblur="xajax_check(this.value);">
+                        <input id="username" class="text" type="text" placeholder="请输入账户名" onclick="fnClearError()" onblur="checkSameName()" name="username" onblur="xajax_check(this.value);">
                     </div>
+                    <div id="checkName_box"></div>
                     <!-- 输入密码 -->
                     <div class="input">
                         <input id="password" class="text" type="password" placeholder="请输入密码" onclick="fnClearError()" name="password">
@@ -38,6 +39,7 @@
         </div>
     </div>
     <script src="./js/script.js"></script>
+    <script src="./js/ajax.js"></script>
 </body>
 
 </html>

@@ -1,14 +1,15 @@
 <!-- 及时提示用户名是否被注册 -->
 <?php 
-include 'xajax_core/xajax.inc.php'; 
+include 'xajax_core/xajax.inc.php';
 $xajax = new xajax();
 //首先在xajax声明一个check函数 
 $xajax -> registerFunction("check");
 //这个check函数需要前台传来用户名username 
-function check($username){ 
+function check($username){
     $orps = new xajaxResponse();
     //连接数据库，看看用没有这个用户名
     $con = mysqli_connect("localhost", "root", "root", "mysql"); 
+    mysqli_select_db($con, $db_name);
     if(!$con){
         die('Could not connect: ' . mysql_error());
     }
