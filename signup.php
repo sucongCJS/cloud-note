@@ -1,6 +1,6 @@
 <?php
 $db_name = "team6_note";
-$username = $_POST['username'];
+$username = trim($_POST['username']);
 $password = $_POST['password'];
 
 $con = mysqli_connect("localhost","root","root","mysql");
