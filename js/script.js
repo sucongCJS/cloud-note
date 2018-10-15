@@ -26,7 +26,7 @@ function fnSignUp(){
         document.getElementById("error_box").innerHTML = "密码长度不得小于6";
         return false;
     }
-    if (document.getElementById("checkName_box").value != ""){
+    if (document.getElementById("checkName_box").innerHTML != ""){
         return false;
     }
     if (fnCheckBlank()){
