@@ -1,4 +1,6 @@
 <!-- comment -->
+<!-- note -->
+<!-- 农特 特殊他 -->
 <?php
 $db_name = "team6_note";
 $username = trim($_POST['username']);
