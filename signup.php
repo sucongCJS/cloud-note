@@ -1,3 +1,4 @@
+<!-- comment -->
 <?php
 $db_name = "team6_note";
 $username = trim($_POST['username']);
